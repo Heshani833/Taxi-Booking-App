@@ -9,6 +9,7 @@ import {
 } from "@clerk/nextjs";
 import "./globals.css";
 import { Outfit } from "next/font/google";
+import { NavBar } from "@/components/NavBar";
 
 const outfit = Outfit({ subsets: ['latin'] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({
               <UserButton />
             </SignedIn>
           </header>
+          <NavBar/>
           {children}
         </body>
       </html>
