@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Hide the Leaflet Routing Machine directions panel */
+.leaflet-routing-container {
+  display: none !important;
+}
 
 :root {
   --background: #ffffff;

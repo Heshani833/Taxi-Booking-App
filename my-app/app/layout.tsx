@@ -26,7 +26,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${outfit.className} antialiased`}
+          className={`${outfit.className} antialiased flex flex-col h-screen`}
         >
           <SignedOut>
             <header className="flex justify-end items-center p-4 gap-4 h-16">
@@ -41,7 +41,9 @@ export default function RootLayout({
           <SignedIn>
             <NavBar />
           </SignedIn>
-          {children}
+          <main className="flex-1 overflow-hidden">
+            {children}
+          </main>
         </body>
       </html>
     </ClerkProvider>
