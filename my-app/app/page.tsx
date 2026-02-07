@@ -2,7 +2,15 @@
 export default function Home() {
   return (
    <div>
-    <h1>Welcome to My App</h1>
+    <div className="grid grid-cols-1 md:grid-cols-3 ">
+      <div className="bg-blue-200">
+        Booking
+      </div>
+      <div className="col-span-2 bg-amber-100">
+        Map
+      </div>
+
+    </div>
    </div>
   );
 }
