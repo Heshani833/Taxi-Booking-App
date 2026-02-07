@@ -29,7 +29,7 @@ export const NavBar = () => {
             height={70}
             className='rounded-xl drop-shadow-sm'
           />
-          <span className='text-2xl font-extrabold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent tracking-tight select-none'>
+          <span className='text-2xl font-extrabold bg-linear-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent tracking-tight select-none'>
             TaxiGo
           </span>
         </Link>
